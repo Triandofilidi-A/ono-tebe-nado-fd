@@ -56,109 +56,135 @@ body {
 
 .cover {
   background-image: url(../images/cover.jpg);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  width: 100%;
+  margin-bottom: 180px;
+  padding: 165px 50px 50px 50px;
   min-height: 757px;
-  padding-top: 165px;
+  background-repeat: no-repeat;
   position: relative;
-  box-sizing: border-box;
+  background-size: cover;
+  background-position: center;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  
 }
 
 .overlay {
-    background-color: rgb(0 0 0 /0.6);
-    position: absolute;
-    z-index: 1;
-    inset: 0;
-    pointer-events: none;
+  background-color: rgb(0 0 0 /0.6);
+  position: absolute;
+  z-index: 1;
+  inset: 0;
+  pointer-events: none;
 }
 
 .cover__title {
-  min-width:1000px;
-  min-height: 385px;
-  color: #ffffff;
-  font-family: raleway;
+  display: flex;
+  flex-direction: column;
+  font-size: 100px;
+  line-height: 115%;
+  text-transform: uppercase;
+  z-index: 1;
+  letter-spacing: 0.3em;
+}
+
+.aligned-text { 
+  display: block;
   font-weight: 700;
   font-size: 100px;
   line-height: 115%;
   letter-spacing: 0.3em;
-  display: flex;
-  position: relative;
-  flex-direction: column;
   text-transform: uppercase;
+  color: #fff;
+}
+
+
+.aligned-text_left {
+  text-align: left; 
+}
+
+.aligned-text_center {
+  text-align: center;
+  padding-left: 30px;
+  padding-top: 20px;
+  
+  
+}
+
+.aligned-text_right {
+  text-align: right;
+  margin-right: -30px;
+  padding-top: 20px;  
+}
+
+.cover__description {
+  display: flex;
+  gap: 107px;
   z-index: 1;
-  
+  padding-top: 106px;
 }
 
 
-.accent {
-  display: block;
-  align-self: flex-start;
-  padding-left: 50px;
-  width: 286px; 
+
+.cover__description-text {
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 127%;
+  text-transform: uppercase;
+  color: #fff;
+  word-spacing: 1.16rem;
+  padding-top: 12px;
 }
 
-.text-center {
-  align-self: center; 
-  width: 339px;
-  margin-top: 21px;
-  margin-right: 121px;
-  
-  
+
+
+
+.bet-button {
+  align-items: start;
+  font-weight: 500;
+  font-size: 22px;
+  text-transform: uppercase;
+  text-align: center;
+  color: #fff;
+  background-color: transparent;
+  border: 1px solid white;
+  padding: 12px 32px 11px 31px;
+  height: 51px;
 }
 
-.text-right {
-  align-self: flex-end;
-  margin-top: 20px;
-  margin-left: 40px;
-  padding-right: 437px;
-  
-  
+.lots {
  
 }
 
-.description {
-  display:flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 12px 20px;
-  margin-top: 95px;
-  border: 1px solid #ffffff;
-  color: #fff;
-  text-transform: uppercase;
+.lots__heading {
+font-family: "Raleway", sans-serif;
+font-size: 40px;
+text-transform: uppercase;
+font-weight: 700;
 }
 
-
-.text__auctione {
-  font-family: "Raleway", sans-serif;
-  font-size: 20px;
-  align-self: center;
-  text-transform: uppercase;  
-}
-
-
-.description button {
-  background: transparent;
-  color: #fff;
-  border: 1px solid #fff;
-  padding: 10px 30px;
-  text-transform: uppercase;
-  cursor: pointer;
-}
-
-.lots__list {
-  list-style: none;
-  margin: 0;
+.lots__card-list {
+ list-style: none;
+  margin-top: 44px;
   padding: 0;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 20px;
 }
 
+.lots__card-list-item {
+  width: 334px;
+  min-height: 563px;
+}
+
+.card-link {
+  display: block;
+  height: 100%;
+  text-decoration: none;
+}
+
 .card {
   position: relative;
-  height: 520px;
+  min-height: 596px;
   padding: 32px;
   color: #fff;
   background-size: cover;
@@ -166,7 +192,8 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  overflow: hidden;
+  min-width: 334px;
+  
 }
 
 .card__title {
@@ -178,6 +205,7 @@ body {
   padding-bottom: 8px;
   border-bottom: 3px solid #fff;
   max-width: 80%;
+  z-index: 1;
 }
 
 .card__text {
@@ -185,18 +213,31 @@ body {
   font-weight: 400;
   font-size: 20px;
   line-height: 120%;
+  z-index: 1;
 }
 
-.card__film {
+.card_type_film {
   background-image: url(../images/card-lot-01.jpg);
 }
 
-.card__book {
+
+
+.card_type_book {
   background-image: url(../images/card-lot-02.jpg);
 }
 
-.card__painting {
+.card_type_picture {
   background-image: url(../images/card-lot-03.jpg);
+}
+
+.about__logo {
+  width: 240px;
+  height: 240px;
+  background: #000;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .footer-inner {
@@ -204,3 +245,7 @@ body {
   justify-content: space-between;
   align-items: flex-start;
 }
+
+
+
+
