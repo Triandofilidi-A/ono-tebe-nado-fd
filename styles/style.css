@@ -233,7 +233,6 @@ body {
   margin-top: 118px;
   display: grid;
   grid-template-columns: 334px 1fr;
-  min-height: 595px;
 }
 
 .about__logo {
@@ -299,7 +298,6 @@ body {
   justify-content: center;
   padding-block: 1px 115px;
   min-width: 163px;
-  min-height: 64px;
 }
 
 .footer__menu-list {
@@ -315,7 +313,6 @@ body {
 
 .footer__social-list {
   display: flex;
-  min-height: 48px;
   flex-direction: row;
   justify-content: end;
   padding: 1px 26px 131px 0;
